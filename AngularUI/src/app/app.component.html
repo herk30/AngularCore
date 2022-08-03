@@ -1,0 +1,44 @@
+<div class="container">
+  <h3 class="d-flex justify-content-center">Angular App with .NET WEB API</h3>
+  <h5 class="d-flex justify-content-center">Employee Management Portal</h5>
+  <nav class="navbar navbar-expand-sm navbar-light">
+    <a class="navbar-brand" href="#"></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <mat-toolbar color="primary">
+      <div class="button-row">
+        <button
+          mat-raised-button
+          [routerLink]="['department']"
+          [routerLinkActive]="['activeItem']"
+          Button
+          color="accent"
+          class="mx-2"
+        >
+          Departments
+        </button>
+        <button
+          mat-raised-button
+          [routerLink]="['employee']"
+          [routerLinkActive]="['activeItem']"
+          Button
+          color="accent"
+          class="mx-2"
+        >
+          Employees
+        </button>
+      </div>
+    </mat-toolbar>
+  </nav>
+
+  <router-outlet></router-outlet>
+</div>
